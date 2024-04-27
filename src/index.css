@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 32 57% 95%;
+    --foreground: 248 19% 40%;
+    --muted: 35 100% 98%;
+    --muted-foreground: 257 9% 61%;
+    --popover: 33 43% 91%;
+    --popover-foreground: 248 19% 40%;
+    --card: 32 57% 93%;
+    --card-foreground: 248 19% 40%;
+    --border: 315 4% 80%;
+    --input: 315 4% 80%;
+    --primary: 268 56% 57%;
+    --primary-foreground: 248 19% 100%;
+    --secondary: 268 46% 82%;
+    --secondary-foreground: 248 9% 15%;
+    --accent: 32 57% 80%;
+    --accent-foreground: 32 57% 20%;
+    --destructive: 343 76% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 248 19% 40%;
+    --subtle: 248 12% 52%;
+    --success: 189 43% 48%;
+    --warning: 35 81% 56%;
+    --link: 197 68% 42%;
+    --top-bar: 189 53% 83%;
+    --top-bar-foreground: 189 19% 25%;
+    --theme-button: 189 24% 48%;
+    --theme-button-foreground: 189 24% 100%;
+    --nav-bar: 10 9% 86%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 246 24% 17%;
+    --foreground: 245 50% 91%;
+    --muted: 248 24% 20%;
+    --muted-foreground: 249 12% 47%;
+    --popover: 248 21% 26%;
+    --popover-foreground: 245 50% 91%;
+    --card: 246 24% 15%;
+    --card-foreground: 245 50% 91%;
+    --border: 249 15% 38%;
+    --input: 249 15% 38%;
+    --primary: 267 82% 83%;
+    --primary-foreground: 245 50% 31%;
+    --secondary: 267 32% 43%;
+    --secondary-foreground: 245 30% 85%;
+    --accent: 246 24% 32%;
+    --accent-foreground: 246 24% 92%;
+    --destructive: 343 100% 68%;
+    --destructive-foreground: 0 0% 100%;
+    --ring: 245 50% 91%;
+    --subtle: 248 15% 61%;
+    --success: 189 48% 48%;
+    --warning: 35 88% 72%;
+    --link: 197 53% 52%;
+    --top-bar: 189 30% 33%;
+    --top-bar-foreground: 189 19% 91%;
+    --theme-button: 189 24% 68%;
+    --theme-button-foreground: 189 24% 20%;
+    --nav-bar: 247 16% 30%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background font-[Figtree,sans-serif] text-base leading-normal text-foreground;
+  }
+
+  a {
+    @apply text-link;
+  }
+}
